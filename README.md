@@ -12,6 +12,6 @@ $sudo make install
 ```bash
 $s2cw hello
 ・・・・ ・ ・ー・・ ーーー
-$s2cw 'CQ @7.001MHz'
+$echo 'CQ @7.001MHz'|s2cw
 ー・ー・ ーー・ー   ・－－・－・  ーー・・・ ・ー・ー・ー ーーーーー ーーーーー ・ーーーー ーー ・・・・ ーー・・
 ```
