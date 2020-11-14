@@ -61,24 +61,24 @@ int main(int argc, char *argv[]) {
   const char dot = '.';
   int i = 0;
   string tmp = "";
-	if (argc>1){
-  while (argv[1][i] != '\0') {
-    if (argv[1][i] == ' ') {
-      cout << morse[tmp];
-      tmp = "";
-      if (argv[1][i + 1] == ' ') {
-        cout << " ";
+  if (argc > 1) {
+    while (argv[1][i] != '\0') {
+      if (argv[1][i] == ' ') {
+        cout << morse[tmp];
+        tmp = "";
+        if (argv[1][i + 1] == ' ') {
+          cout << " ";
+        }
+      } else if (argv[1][i] == dash) {
+        tmp += "T";
+      } else if (argv[1][i] == dot) {
+        tmp += "E";
       }
-    } else if (argv[1][i] == dash) {
-      tmp += "T";
-    } else if (argv[1][i] == dot) {
-      tmp += "E";
+      i++;
     }
-    i++;
-  }
-  cout << morse[tmp] << " ";
-  cout << endl;
-	}
-	else return 1;
+    cout << morse[tmp] << " ";
+    cout << endl;
+  } else
+    return 1;
   return 0;
 }
